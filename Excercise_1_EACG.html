@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Exercise 1</title>
+</head>
+<body>
+     <script>
+          const paragraph = document.createElement("p");
+          paragraph.setAttribute("id", "intro");
+          paragraph.textContent = "Hello there, you are ";
+          document.body.append(paragraph);
+
+          const strongElement = document.createElement("strong");
+          strongElement.textContent = "manipulating";
+          paragraph.appendChild(strongElement);
+
+          paragraph.append(" the DOM!")
+     </script>
+</body>
+</html>
