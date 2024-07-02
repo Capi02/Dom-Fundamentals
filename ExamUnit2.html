@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Evaluation Unit 2</title>
+</head>
+<body>
+
+      <header>
+         <h1>Evaluation Unit 2</h1>
+      </header>
+
+     <script>
+
+          const  texts = ["School", "Work", "Hobbies"];
+
+          const body = document.querySelector("body");
+          
+
+          const p = document.createElement("p");
+          p.textContent = "Hi, welcome to my practical test";
+
+          const leaveACommentDiv = document.createElement("div");
+          leaveACommentDiv.textContent = "Leave a comment here: ";
+
+          const inputElement = document.createElement('input');
+          inputElement.placeholder = "Write here:"
+          
+          leaveACommentDiv.appendChild(inputElement);
+       
+          const navElement = document.createElement("nav");
+
+          const unorderList = document.createElement("ul");
+
+          navElement.appendChild(unorderList)
+
+          const schoolElement = document.createElement("li")
+          schoolElement.textContent = "School";
+
+          const workElement = document.createElement("li")
+          workElement.textContent = "Work";
+
+          const hobbyElement = document.createElement("li")
+          hobbyElement.textContent = "Hobbies";
+
+          unorderList.appendChild(schoolElement);
+          unorderList.appendChild(workElement);
+          unorderList.appendChild(hobbyElement)
+
+
+          const titleElement = document.querySelector("h1");
+          titleElement.append(" - Erick A. Capitanachi");
+          
+          leaveACommentDiv.appendChild(navElement)
+          body.appendChild(leaveACommentDiv);
+          
+     </script>
+</body>
+</html>
